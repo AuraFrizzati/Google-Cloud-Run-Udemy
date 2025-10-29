@@ -21,6 +21,7 @@ def check_connection(target_url):
         timeout=10, 
         allow_redirects=True,
         headers=headers
+        ,verify=False
     )
     status = response.status_code
     is_successful = 200 <= status < 400 
