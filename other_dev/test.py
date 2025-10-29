@@ -1,6 +1,9 @@
 import os
 import datetime
 import requests
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 URL1 = "https://www2.nphs.wales.nhs.uk/WHAIPDocs.nsf"
 URL2 = "https://www.nhfd.co.uk/20/nhfdcharts.nsf/vwCharts/Mortality"
